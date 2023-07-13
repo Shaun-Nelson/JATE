@@ -10,7 +10,7 @@
     "build": "cd client && npm run build",
     "install": "cd server && npm i && cd ../client && npm i",
     "client": "cd client && npm start",
-    "heroku-postbuild": "cd server && node server.js"
+    "heroku-postbuild": "npm run build && cd server && node server.js"
   },
   "keywords": [],
   "author": "",
@@ -37,7 +37,7 @@
     "mini-css-extract-plugin": "^2.7.6",
     "nodemon": "^2.0.4",
     "style-loader": "^3.2.1",
-    "webpack": "^5.51.1",
+    "webpack": "^5.88.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.0.0",
     "webpack-pwa-manifest": "^4.3.0",
