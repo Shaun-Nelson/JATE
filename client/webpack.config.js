@@ -34,7 +34,7 @@ const manifestPlugin = new WebpackPwaManifest({
 
 module.exports = () => {
   return {
-    mode: "production",
+    mode: "development",
     entry: {
       main: "./src/js/index.js",
       install: "./src/js/install.js",
