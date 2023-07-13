@@ -12,10 +12,15 @@ const serviceWorkerPlugin = new InjectManifest({
 });
 
 const manifestPlugin = new WebpackPwaManifest({
-  name: "PWA Text Editor",
-  short_name: "PWA Text Editor",
-  description: "A simple text editor that works offline.",
+  name: "Just Another Text Editor",
+  short_name: "J.A.T.E.",
+  description: "Takes notes with JavaScript syntax highlighting.",
   publicPath: "/",
+  fingerprints: false,
+  inject: true,
+  background_color: "#225ca3",
+  theme_color: "#225ca3",
+  start_url: "/",
   icons: [
     {
       src: path.resolve("./src/images/logo.png"),
@@ -29,7 +34,7 @@ const manifestPlugin = new WebpackPwaManifest({
 
 module.exports = () => {
   return {
-    mode: "development",
+    mode: "production",
     entry: {
       main: "./src/js/index.js",
       install: "./src/js/install.js",
@@ -65,6 +70,10 @@ module.exports = () => {
             loader: "babel-loader",
             options: {
               presets: ["@babel/preset-env"],
+              plugins: [
+                "@babel/transform-runtime",
+                "@babel/plugin-proposal-object-rest-spread",
+              ],
             },
           },
         },
