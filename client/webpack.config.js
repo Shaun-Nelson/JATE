@@ -46,7 +46,7 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: "./index.html",
-        title: "PWA Text Editor",
+        title: "Just Another Text Editor",
       }),
       new MiniCssExtractPlugin(),
       serviceWorkerPlugin,
