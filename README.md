@@ -17,7 +17,7 @@ Just Another Text Editor. Installable, single-page PWA text editor that works of
 
 ## GitHub Repository
 
-https://github.com/Shaun-Nelson/social-network-API
+https://github.com/Shaun-Nelson/JATE
 
 ## Heroku Link
 
