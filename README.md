@@ -1,18 +1,19 @@
-# Social Network API
+# JATE
 
 ## Table of Contents
 
-- [Social Network API](#social-network-api)
+- [JATE](#jate)
   - [Table of Contents](#table-of-contents)
   - [Description](#description)
   - [GitHub Repository](#github-repository)
   - [Heroku Link](#heroku-link)
+  - [Preview Screenshot](#preview-screenshot)
   - [Credits](#credits)
   - [License](#license)
 
 ## Description
 
-An API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.
+Just Another Text Editor. Installable, single-page PWA text editor that works offline. Uses a service worker to cache the app and IndexedDB to store the user's input.
 
 ## GitHub Repository
 
@@ -21,6 +22,10 @@ https://github.com/Shaun-Nelson/social-network-API
 ## Heroku Link
 
 https://intense-beyond-13048-9fbeb55baa5e.herokuapp.com/
+
+## Preview Screenshot
+
+<img src="./screenshot.png">
 
 ## Credits
 
